@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Información de contacto y ubicación de Verdeluz.">
+
+    <title>Verdeluz | Contacto</title>
+
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+
+    <script src="../js/main.js" defer></script>
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="../js/contacto.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <a class="skip-link" href="#contenido">
+        Saltar al contenido
+    </a>
+
+
+    <header class="site-header">
+
+        <nav class="main-nav" aria-label="Navegación principal">
+
+            <a href="../index.html" class="logo">
+                Verdeluz
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="nav-links">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="galeria.html">
+                        Guía de plantas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="presupuesto.html">
+                        Asesoramiento
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" class="active">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main id="contenido">
+
+        <section class="page-hero">
+
+            <p class="eyebrow">
+                ESTAMOS AQUÍ
+            </p>
+
+            <h1>
+                Contacto
+            </h1>
+
+            <p>
+                Consulta nuestra ubicación y calcula una ruta desde tu posición.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="contact-grid">
+
+
+                <div class="contact-info">
+
+                    <p class="eyebrow">
+                        VERDELUZ
+                    </p>
+
+                    <h2>
+                        Hablemos de tus plantas
+                    </h2>
+
+                    <p>
+                        Si tienes dudas sobre el cuidado de una planta,
+                        puedes ponerte en contacto con nosotros.
+                    </p>
+
+
+                    <dl>
+
+                        <div>
+
+                            <dt>
+                                Dirección
+                            </dt>
+
+                            <dd>
+                                Av. de la Marina, 24<br>
+                                03570 La Vila Joiosa, Alicante
+                            </dd>
+
+                        </div>
+
+
+                        <div>
+
+                            <dt>
+                                Teléfono
+                            </dt>
+
+                            <dd>
+                                <a href="tel:+34965000123">
+                                    965 000 123
+                                </a>
+                            </dd>
+
+                        </div>
+
+
+                        <div>
+
+                            <dt>
+                                Email
+                            </dt>
+
+                            <dd>
+                                <a href="mailto:hola@verdeluz.example">
+                                    hola@verdeluz.example
+                                </a>
+                            </dd>
+
+                        </div>
+
+                    </dl>
+
+
+                    <button
+                        id="route-button"
+                        class="button button-primary"
+                        type="button">
+
+                        Calcular ruta desde mi ubicación
+
+                    </button>
+
+
+                    <p
+                        id="route-status"
+                        class="form-status"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </div>
+
+
+                <div class="map-wrapper">
+
+                    <div
+                    id="map"
+                    class="map"
+                    role="region"
+                    aria-label="Mapa interactivo de la ubicación de Verdeluz">
+                    </div>
+
+                    <p class="map-note">
+                        Mapa basado en OpenStreetMap. La ruta se solicita
+                        a un servicio de enrutamiento público cuando el
+                        usuario la pide.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+
+                <a href="../index.html" class="logo">
+                    Verdeluz
+                </a>
+
+                <p>
+                    Asesoramiento y cuidados para tus plantas.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contacto
+                </h3>
+
+                <p>
+                    Av. de la Marina, 24<br>
+                    03570 La Vila Joiosa, Alicante
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Síguenos
+                </h3>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        Facebook
+                    </a>
+
+                    <a href="#">
+                        Pinterest
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Verdeluz
+            </p>
+
+            <a href="#">
+                Aviso legal
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

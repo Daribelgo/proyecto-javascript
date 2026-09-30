@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Solicita un asesoramiento personalizado para el cuidado de tus plantas.">
+
+    <title>Verdeluz | Asesoramiento</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/presupuesto.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <a class="skip-link" href="#contenido">
+        Saltar al contenido
+    </a>
+
+
+    <header class="site-header">
+
+        <nav class="main-nav" aria-label="Navegación principal">
+
+            <a href="index.html" class="logo">
+                Verdeluz
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="nav-links">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="galeria.html">
+                        Guía de plantas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="presupuesto.html" class="active">
+                        Asesoramiento
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main id="contenido">
+
+
+        <section class="page-hero">
+
+            <p class="eyebrow">
+                EMPECEMOS
+            </p>
+
+            <h1>
+                Personaliza tu asesoramiento
+            </h1>
+
+            <p>
+                Selecciona las opciones que necesitas y descubre
+                automáticamente el precio estimado.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+
+            <form
+                id="budget-form"
+                class="budget-form"
+                novalidate>
+
+                <fieldset>
+
+                    <legend>
+                        1. Datos de contacto
+                    </legend>
+
+
+                    <div class="form-grid">
+
+
+                        <div class="form-field">
+
+                            <label for="nombre">
+                                Nombre
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="nombre"
+                                name="nombre"
+                                type="text"
+                                maxlength="15"
+                                autocomplete="given-name"
+                                required
+                                pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]+"
+                                aria-describedby="nombre-error">
+
+                            <small
+                                id="nombre-error"
+                                class="field-error">
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="apellidos">
+                                Apellidos
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="apellidos"
+                                name="apellidos"
+                                type="text"
+                                maxlength="40"
+                                autocomplete="family-name"
+                                required
+                                pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]+"
+                                aria-describedby="apellidos-error">
+
+                            <small
+                                id="apellidos-error"
+                                class="field-error">
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="telefono">
+                                Teléfono de contacto
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="telefono"
+                                name="telefono"
+                                type="tel"
+                                inputmode="numeric"
+                                maxlength="9"
+                                autocomplete="tel"
+                                required
+                                pattern="[0-9]{9}"
+                                aria-describedby="telefono-error">
+
+                            <small
+                                id="telefono-error"
+                                class="field-error">
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="email">
+                                Correo electrónico
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                maxlength="100"
+                                autocomplete="email"
+                                required
+                                aria-describedby="email-error">
+
+                            <small
+                                id="email-error"
+                                class="field-error">
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        2. Tipo de asesoramiento
+                    </legend>
+
+
+                    <div class="form-section">
+
+                        <h2 class="form-title">
+                            Elige tu asesoramiento
+                        </h2>
+
+
+                        <div class="option-grid">
+
+
+                            <label class="choice-card">
+
+                                <input
+                                    type="radio"
+                                    name="producto"
+                                    value="25"
+                                    data-name="Consulta básica"
+                                    required>
+
+                                <span>
+
+                                    <strong>
+                                        Consulta básica
+                                    </strong>
+
+                                    <small>
+                                        25 €
+                                    </small>
+
+                                    <em>
+                                        Una duda concreta sobre tu planta.
+                                    </em>
+
+                                </span>
+
+                            </label>
+
+
+                            <label class="choice-card">
+
+                                <input
+                                    type="radio"
+                                    name="producto"
+                                    value="45"
+                                    data-name="Plan de cuidados">
+
+                                <span>
+
+                                    <strong>
+                                        Plan de cuidados
+                                    </strong>
+
+                                    <small>
+                                        45 €
+                                    </small>
+
+                                    <em>
+                                        Rutina personalizada de cuidados.
+                                    </em>
+
+                                </span>
+
+                            </label>
+
+
+                            <label class="choice-card">
+
+                                <input
+                                    type="radio"
+                                    name="producto"
+                                    value="70"
+                                    data-name="Asesoramiento completo">
+
+                                <span>
+
+                                    <strong>
+                                        Asesoramiento completo
+                                    </strong>
+
+                                    <small>
+                                        70 €
+                                    </small>
+
+                                    <em>
+                                        Análisis completo de tus plantas.
+                                    </em>
+
+                                </span>
+
+                            </label>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-section">
+
+                        <label
+                            class="form-title"
+                            for="plazo">
+
+                            Tiempo de seguimiento (meses)
+
+                        </label>
+
+
+                        <input
+                            id="plazo"
+                            name="plazo"
+                            type="number"
+                            min="1"
+                            max="36"
+                            step="1"
+                            value="3"
+                            aria-describedby="plazo-help">
+
+
+                        <small id="plazo-help">
+
+                            1–3 meses: sin descuento ·
+                            4–6: 5 % ·
+                            7–12: 10 % ·
+                            más de 12: 15 %.
+
+                        </small>
+
+                    </div>
+
+                    <div class="form-section">
+
+                        <h2 class="form-title">
+                            Extras
+                        </h2>
+
+
+                        <div class="checkbox-grid">
+
+
+                            <label class="check-row">
+
+                                <input
+                                    type="checkbox"
+                                    name="extras"
+                                    value="10">
+
+                                <span>
+                                    Identificación de problemas
+                                    <strong>
+                                        +10 €
+                                    </strong>
+                                </span>
+
+                            </label>
+
+
+                            <label class="check-row">
+
+                                <input
+                                    type="checkbox"
+                                    name="extras"
+                                    value="15">
+
+                                <span>
+                                    Revisión de sustrato
+                                    <strong>
+                                        +15 €
+                                    </strong>
+                                </span>
+
+                            </label>
+
+
+                            <label class="check-row">
+
+                                <input
+                                    type="checkbox"
+                                    name="extras"
+                                    value="20">
+
+                                <span>
+                                    Plan de fertilización
+                                    <strong>
+                                        +20 €
+                                    </strong>
+                                </span>
+
+                            </label>
+
+
+                            <label class="check-row">
+
+                                <input
+                                    type="checkbox"
+                                    name="extras"
+                                    value="25">
+
+                                <span>
+                                    Seguimiento personalizado
+                                    <strong>
+                                        +25 €
+                                    </strong>
+                                </span>
+
+                            </label>
+
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="total-box"
+                        aria-live="polite">
+
+                        <div>
+
+                            <span>
+                                Asesoramiento estimado
+                            </span>
+
+                            <small id="discount-text">
+                                Selecciona un servicio para comenzar.
+                            </small>
+
+                        </div>
+
+
+                        <output
+                            id="total"
+                            for="plazo">
+
+                            0,00 €
+
+                        </output>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        Condiciones y envío
+                    </legend>
+
+
+                    <label class="check-row terms-row">
+
+                        <input
+                            id="condiciones"
+                            name="condiciones"
+                            type="checkbox"
+                            required>
+
+                        <span>
+                            Acepto las condiciones de privacidad
+                            y el tratamiento de los datos para gestionar
+                            esta solicitud.
+                        </span>
+
+                    </label>
+
+
+                    <p
+                        id="form-status"
+                        class="form-status"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+
+                    <div class="button-group">
+
+                        <button
+                            class="button button-primary"
+                            type="submit">
+
+                            Enviar solicitud
+
+                        </button>
+
+
+                        <button
+                            class="button button-secondary"
+                            type="reset">
+
+                            Limpiar
+
+                        </button>
+
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+
+                <a href="index.html" class="logo">
+                    Verdeluz
+                </a>
+
+                <p>
+                    Asesoramiento y cuidados para tus plantas.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contacto
+                </h3>
+
+                <p>
+                    Av. de la Marina, 24<br>
+                    03570 La Vila Joiosa, Alicante
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Síguenos
+                </h3>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        Facebook
+                    </a>
+
+                    <a href="#">
+                        Pinterest
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Verdeluz
+            </p>
+
+            <a href="#">
+                Aviso legal
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

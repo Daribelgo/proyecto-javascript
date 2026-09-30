@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Guía de plantas de Verdeluz con información sobre sus cuidados.">
+
+    <title>Verdeluz | Guía de plantas</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="main-nav" aria-label="Navegación principal">
+
+            <a href="../index.html" class="logo">
+                Verdeluz
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="nav-links">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="galeria.html" class="active">
+                        Guía de plantas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="presupuesto.html">
+                        Asesoramiento
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="page-hero-content">
+
+                <p class="eyebrow">
+                    GUÍA DE PLANTAS
+                </p>
+
+                <h1>
+                    Conoce mejor tus plantas.
+                </h1>
+
+                <p>
+                    Explora diferentes plantas y descubre sus necesidades
+                    de luz, riego, humedad y dificultad de cuidado.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    EXPLORA
+                </p>
+
+                <h2>
+                    Encuentra la planta que buscas
+                </h2>
+
+                <p>
+                    Utiliza los filtros para consultar plantas de interior,
+                    exterior o aromáticas.
+                </p>
+
+            </div>
+
+
+            <div
+                class="gallery-filters">
+               
+                <button
+                    type="button"
+                    class="filter-button is-active"
+                    data-filter="todas">
+
+                    Todas
+
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-button"
+                    data-filter="interior">
+
+                    Interior
+
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-button"
+                    data-filter="exterior">
+
+                    Exterior
+
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-button"
+                    data-filter="aromaticas">
+
+                    Aromáticas
+
+                </button>
+
+            </div>
+
+
+            <div
+                id="plant-gallery"
+                class="plant-gallery"
+                aria-live="polite">
+
+            </div>
+
+        </section>
+
+        <section class="section section-soft">
+
+            <div class="info-section">
+
+                <div>
+
+                    <p class="eyebrow">
+                        ANTES DE ELEGIR
+                    </p>
+
+                    <h2>
+                        La planta adecuada depende de tu espacio.
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        Antes de comprar una planta, observa las condiciones
+                        de tu hogar o jardín: cantidad de luz, temperatura,
+                        humedad y espacio disponible.
+                    </p>
+
+                    <p>
+                        Las fichas de esta guía ofrecen una orientación general.
+                        Las necesidades reales pueden variar según la estación,
+                        el clima y las condiciones concretas de cada planta.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<dialog id="plant-modal" class="plant-modal">
+
+    <div class="modal-content">
+
+        <button
+            type="button"
+            id="modal-close"
+            class="modal-close"
+            aria-label="Cerrar información">
+            &times;
+        </button>
+
+        <div class="modal-image-container">
+            <img
+                id="modal-image"
+                src="../img/monstera.jpeg"
+                alt="Imagen de la planta seleccionada">
+        </div>
+
+        <div class="modal-info">
+
+            <p
+                id="modal-category"
+                class="plant-category">
+            </p>
+
+            <h2 id="modal-title">Información de la planta</h2>
+
+            <p id="modal-description"></p>
+
+            <div
+                id="modal-care-grid"
+                class="modal-care-grid">
+            </div>
+
+        </div>
+
+    </div>
+
+</dialog>
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+
+                <a href="../index.html" class="logo">
+                    Verdeluz
+                </a>
+
+                <p>
+                    Asesoramiento y cuidados para tus plantas.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contacto
+                </h3>
+
+                <p>
+                    Av. de la Marina, 24<br>
+                    03570 La Vila Joiosa, Alicante
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Síguenos
+                </h3>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        Facebook
+                    </a>
+
+                    <a href="#">
+                        Pinterest
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Verdeluz
+            </p>
+
+            <a href="#">
+                Aviso legal
+            </a>
+
+        </div>
+
+    </footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/galeria.js"></script>
+
+</body>
+
+</html>
